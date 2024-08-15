@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CDN Setup</title>
+    <!-- Add tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configure Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f00", // red color
+              secondary: "#0f0", // green color
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Add custom CSS -->
+    <style type="text/tailwindcss">
+      /* This custom CSS supports all of Tailwind's CSS features */
+      @layer utilities {
+        .content-hidden {
+          content-visibility: hidden;
+        }
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-hidden sm:content-auto">
+      <h1 class="text-primary">Text with custom primary color</h1>
+      <h2 class="text-secondary">Text with custom secondary color</h2>
+    </div>
+  </body>
+</html>
