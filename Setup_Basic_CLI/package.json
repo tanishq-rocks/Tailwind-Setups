@@ -1,0 +1,15 @@
+{
+  "name": "setup_basic_cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwindcss:init": "tailwindcss init",
+    "watch:css": "tailwindcss -i ./input.css -o ./dist/output.css --watch" 
+  },
+  "author": "Tanishq Patni",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}

@@ -1,0 +1,6 @@
+/* Add all tailwind's layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Write your custom css here */
